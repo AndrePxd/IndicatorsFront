@@ -1,0 +1,40 @@
+h2{
+  margin: 20px;
+  text-align: center;
+  font-size: 50px;
+}
+h3{
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+.dashboard-card {
+  margin: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color:#900C3F  ;
+}
+
+.indicator-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.indicator-input {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.add-button {
+  align-self: flex-end;
+}
+
+.mat-icon-button {
+  margin-right: 8px;
+}
+.mat-elevation-z8 {
+  background-color: #4A235A ; /* Cambia el color de fondo de la tabla aquí */
+}
+
+

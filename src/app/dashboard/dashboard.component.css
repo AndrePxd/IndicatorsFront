@@ -1,0 +1,52 @@
+/*.custom-card {*/
+/*  width: 300px;*/
+/*  height: 300px;*/
+/*}*/
+/*p{*/
+/*  color: white;*/
+/*}*/
+
+h2{
+  margin: 20px;
+  text-align: center;
+  font-size: 50px;
+}
+.dashboard-card {
+  margin: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color:#900C3F  ;
+}
+.custom-card {
+  width: 300px;
+  height: 300px;
+  margin: 20px 0; /* Agrega margen superior e inferior aquí */
+  background-color: #fff;
+  border: 3px solid #4A235A;
+  border-radius: 8px;
+  perspective: 1000px;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+
+.custom-card:hover {
+  transform: rotateY(10deg) rotateX(-5deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.custom-card mat-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.custom-card p {
+  margin-bottom: 8px;
+}
+
+.custom-card mat-progress-spinner {
+  margin-bottom: 16px;
+}
+

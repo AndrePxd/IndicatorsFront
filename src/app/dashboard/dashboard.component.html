@@ -1,0 +1,21 @@
+<div id="pdfContent">
+<h2>Dashboard</h2>
+<mat-card class="dashboard-card">
+  <mat-grid-list cols="3" rowHeight="300px">
+    <mat-grid-tile *ngFor="let indicator of indicators">
+      <mat-card class="custom-card">
+        <mat-card-content>
+          <mat-progress-spinner [color]="getColor(indicator)" [value]="getPercentage(indicator)" mode="determinate"></mat-progress-spinner>
+          <p>{{ getPercentage(indicator) }}%</p>
+          <div class="indicator-values">
+            <p>Indicador: {{indicator.nameKri}}</p>
+            <p>Valor 1: {{ indicator.value1 }}</p>
+            <p>Valor 2: {{ indicator.value2 }}</p>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <button mat-raised-button color="primary" (click)="generatePDF()">Descargar PDF</button>
+</mat-card>
+</div>
